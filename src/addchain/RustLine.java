@@ -158,7 +158,7 @@ public interface RustLine {
 
         @Override
         public String toRustString() {
-            return lhs + ".square_assign();";
+            return lhs + " = " + lhs + ".square();";
         }
     }
 

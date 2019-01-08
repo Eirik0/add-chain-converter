@@ -238,7 +238,7 @@ public interface AddChainLine {
                 if (verbose) {
                     return Arrays.asList(new LetRustLine(lhs, sq), new SquareAssignRustLine(lhs));
                 } else {
-                    return Collections.singletonList(new LetRustLine(lhs, AddChainMain.SQUARE_FUNCTION_STRING + "(" + sq + ")"));
+                    return Collections.singletonList(new LetRustLine(lhs, sq + "." + AddChainMain.SQUARE_FUNCTION_STRING + "()"));
                 }
             }
         }

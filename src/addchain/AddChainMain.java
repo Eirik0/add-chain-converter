@@ -20,9 +20,9 @@ public class AddChainMain {
         if (args.length < 1) {
             System.err.println("Error: Expected file path for input.");
             System.err.println("Try:");
-            System.err.println("    java -jar add-chain-converter.jar ./chains/Fq.txt");
+            System.err.println("    java -jar add-chain-converter.jar ./chains/Fr.txt");
             System.err.println("OR");
-            System.err.println("    java -jar add-chain-converter.jar ./chains/Fq.txt --verbose");
+            System.err.println("    java -jar add-chain-converter.jar ./chains/Fr.txt --verbose");
             System.exit(0);
         }
         String chainFilePath = args[0];
